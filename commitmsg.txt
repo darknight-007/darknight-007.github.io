@@ -1,0 +1,11 @@
+Correct the provenance of the Pipili appliqué photograph
+
+The image of woven cane sections draped in red Pipili appliqué is from the
+Reno Generator build space during the 2026 final build phase, not from the
+2025 India Art Fair and not from the 2025 crate arrival in Phoenix. It was
+attached to both.
+
+- Remove it from the India Art Fair card on /fire/, which now stands as text
+  only, consistent with the other non-Navagunjara entries.
+- Remove it from the "Crates arrive · July 2025 · Phoenix" timeline entry.
+- Place it in "Summer 2026 · Reno" with an accurate caption and alt text.
