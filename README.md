@@ -19,7 +19,6 @@ css/site.css            the entire design system
 img/                    stills (extracted from the 2026 build film with FFmpeg)
 serve.ps1               local preview server (no dependencies)
 .nojekyll               serve the tree verbatim on GitHub Pages
-CNAME                   custom domain for GitHub Pages
 ```
 
 ## Editing
@@ -48,14 +47,18 @@ git push origin master
 
 `.nojekyll` tells Pages to serve the tree verbatim instead of running a Jekyll build.
 
-`CNAME` contains `jnaneshwar.com`. While that file is present, Pages treats the custom domain as canonical and redirects `darknight-007.github.io` to it — so the domain's DNS must point at GitHub Pages first:
+### Moving to jnaneshwar.com
+
+The site currently serves at `darknight-007.github.io`. To switch to the custom domain, point its DNS at GitHub Pages:
 
 ```
 A     @     185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
 CNAME www   darknight-007.github.io.
 ```
 
-Until DNS is configured, delete `CNAME` to serve at `darknight-007.github.io` directly.
+then add a `CNAME` file containing `jnaneshwar.com` (or set the custom domain in the repository's Pages settings, which writes the file for you). Pages will redirect `darknight-007.github.io` to the domain once it is present.
+
+Note that the `<link rel="canonical">` tags and `sitemap.xml` already name `https://jnaneshwar.com/` as the canonical home, in anticipation of that move.
 
 ## License
 
