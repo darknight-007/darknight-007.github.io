@@ -192,6 +192,7 @@ main { padding: 3rem 0 4.5rem; }
 .converge {
   text-align: center; color: var(--dim);
   padding: .9rem 0; letter-spacing: .08em;
+  text-wrap: balance;
 }
 
 .now-block {
